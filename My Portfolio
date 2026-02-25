@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Francis | Portfolio</title>
+</head>
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+    transition:0.3s ease;
+}
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#00adb5;
+}
+
+/* Sections */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* Hero */
+.hero{
+    background:white;
+}
+
+.hero img{
+    width:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    margin-bottom:10px;
+}
+
+/* Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.grid-item{
+    aspect-ratio: 1;
+    background: blue;
+    border-radius: 10px;
+    transform: matrix3d(150px);
+    transition: 3s ;
+    box-shadow: 3px 5px 5px;
+}
+
+/* Fees Box */
+.fees-box{
+    background:white;
+    padding:20px;
+    max-width:400px;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+form{
+    max-width:400px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#00adb5;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#007b80;
+}
+
+/* FAQ */
+.faq-item{
+    max-width:600px;
+    margin:10px auto;
+    text-align:left;
+    background:white;
+    padding:15px;
+    border-radius:5px;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Allen Francis</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#fees">Fees</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-21 at 9.34.26 AM.jpeg" alt="Logo">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I am a Cyber Security & Web Design Enthusiast.I am Allen Francis, a passionate Cyber Security learner and Web Design enthusiast. <br>I have hands-on experience in Linux projects, digital security concepts, and creating clean, responsive websites using HTML and CSS.</p>
+</section>
+
+<section id="portfolio">
+    <h2>My Portfolio</h2>
+    <p>✔ Linux Projects<br>
+       ✔ Cyber Security Training<br>
+       ✔ Website Design Projects</p>
+</section>
+
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="/home/allen/Pictures/Screenshots/Allen cartoon.jpg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 4.15.59 PM.jpeg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 4.03.50 PM.jpeg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 4.05.03 PM.jpeg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 3.55.43 PM.jpeg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 3.55.19 PM.jpeg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 3.55.19 PM (2).jpeg">
+        <img src="/home/allen/Pictures/Photos/WhatsApp Image 2024-07-28 at 3.55.42 PM.jpeg">
+    </div>
+</section>
+
+<section id="fees">
+    <h2>Fees</h2>
+    <div class="fees-box">
+        <p>Website Design: ₹2000</p>
+        <p>Cyber Security Guidance: ₹1500</p>
+        <p>Linux Setup Support: ₹1000</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<section>
+    <h2>Address</h2>
+    <p>Patna, Bihar, India</p>
+</section>
+
+<section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <strong>Q: What services do you provide?</strong>
+        <p>A: Web Design, Linux Projects and Cyber Security Guidance.</p>
+    </div>
+    <div class="faq-item">
+        <strong>Q: How can I contact you?</strong>
+        <p>A: Use the contact form above.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Allen Francis | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
