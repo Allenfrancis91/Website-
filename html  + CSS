@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple College Website</title>
+
+<style>
+
+/* ====== Global Style ====== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition: all 0.6s linear;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+/* ====== Header ====== */
+header{
+    text-align:center;
+    padding:20px;
+    background:#2c3e50;
+    color:white;
+}
+
+header img{
+    width:100px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+header img:hover{
+    transform:;
+    transition: all 1s ease-in-out;
+}
+
+/* ====== Main Container ====== */
+.container{
+    display:flex;
+    margin:20px;
+}
+
+/* ====== Left Column (Links) ====== */
+.left{
+    width:20%;
+    background:#dfe6e9;
+    padding:20px;
+    border:2px solid #999;
+}
+
+.left ul{
+    list-style:none;
+}
+
+.left ul li{
+    margin:15px 0;
+    padding:10px;
+    border:1px solid #555;
+    text-align:center;
+}
+
+.left ul li:hover{
+    background:#74b9ff;
+    transform:;
+}
+
+/* ====== Center Column (Images) ====== */
+.center{
+    width:50%;
+    padding:20px;
+    text-align:center;
+}
+
+.center img{
+    width:80%;
+    margin:10px;
+    border:3px solid #555;
+    padding:10px;
+}
+
+.center img:hover{
+    transform:;
+    transition: all 1s ease-in-out;
+}
+
+/* ====== Right Column (Vice Principal) ====== */
+.right{
+    width:30%;
+    background:#ffeaa7;
+    padding:20px;
+    border:2px solid #999;
+    text-align:center;
+}
+
+.right img{
+    width:120px;
+    border-radius:50%;
+    border:3px solid #333;
+    margin-bottom:10px;
+}
+
+.right img:hover{
+    transform:rotate(360deg);
+}
+
+/* ====== Footer ====== */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+/* ====== Responsive Design ====== */
+
+/* Tablet */
+@media screen and (max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+
+    .left, .center, .right{
+        width:100%;
+        margin-bottom:20px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:360px){
+    header h1{
+        font-size:18px;
+    }
+
+    .center img{
+        width:100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/100" alt="Logo">
+    <h1>My College Website</h1>
+</header>
+
+<div class="container">
+
+    <!-- Left Column -->
+    <div class="left">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Center Column -->
+    <div class="center">
+        <img src="https://via.placeholder.com/400x200" alt="Image1">
+        <img src="https://via.placeholder.com/400x200" alt="Image2">
+    </div>
+
+    <!-- Right Column -->
+    <div class="right">
+        <img src="https://via.placeholder.com/120" alt="Vice Principal">
+        <h3>Vice Principal</h3><br>
+        <p>
+            Welcome to our college website.  
+            We focus on quality education, discipline,  
+            and modern technology learning.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Contact Us: info@college.com | +91 9876543210</p>
+</footer>
+
+</body>
+</html>
